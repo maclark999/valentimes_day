@@ -1,16 +1,13 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-.footer{
-  padding-bottom: 1em;
-}
-
-body
-{
-background: #FFF2F7;
+body {
+  background: #FFF2F7;
+  height: 100%;
 }
 
 .thumbnail {
+  margin: 0 auto;
   display: block;
   padding: 4px;
   margin-bottom: 20px;

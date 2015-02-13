@@ -1,5 +1,9 @@
 class ValentinesController < ApplicationController
 
+  def index
+    @valentines = Valentine.all
+  end
+
   def new
     @valentine = Valentine.new
   end
@@ -14,6 +18,13 @@ class ValentinesController < ApplicationController
   end
 
   def white_men
+  end
+
+  def destroy
+    @valentine = Valentine.find(params[:id])
+    if @valentine.destroy
+      redirect_to valentines_path
+    end
   end
 
 

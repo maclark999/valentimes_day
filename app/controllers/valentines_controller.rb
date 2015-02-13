@@ -13,6 +13,10 @@ class ValentinesController < ApplicationController
     end
   end
 
+  def white_men
+  end
+
+
 private
   def valentine_params
     params.require(:valentine).permit(:name, :message)

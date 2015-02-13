@@ -1,21 +1,23 @@
 <div class = "container">
   <%= form_for(@valentine, html: {class: "form-horizontal"}) do |f| %>
     <div class = "form-group">
-      <%= f.label :name, class: "col-md-2" %>
+      <%= f.label :name, class: "col-md-1" %>
         <div class = "col-md-6">
           <%= f.text_field :name, class: "form-control" %>
         </div>
       </div>
 
       <div class = "form-group">
-        <%= f.label :message, class: "col-md-2" %>
+        <%= f.label :message, class: "col-md-1" %>
         <div class = "col-md-6">
         <%= f.text_area :message, class: "form-control, col-md-4" %>
         </div>
       </div>
 
       <div class = "form-group">
-        <%= f.submit 'Keep it secret. Keep it Safe.', class: "btn btn-success col-md-offset-2" %>
+        <%= f.submit 'Keep it secret. Keep it Safe.', class: "btn btn-default col-md-offset-1" %>
+        <%= link_to "Nevermind. You smell weird.", valentines_path, class: "btn btn-danger"%>
+      </div>
 
   <% end %>
 </div>

@@ -1,2 +1,30 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+body
+{
+background: #FFF2F7;
+}
+
+.thumbnail {
+  display: block;
+  padding: 4px;
+  margin-bottom: 20px;
+  line-height: 1.42857143;
+  background-color: #FFF2F7;
+  // border: 5px solid #FF3385;
+  border-radius: 4px;
+  -webkit-transition: border .2s ease-in-out;
+  -o-transition: border .2s ease-in-out;
+  transition: border .2s ease-in-out;
+}
+
+.btn-default {
+  color: #FFFFFF;
+  background-color: #FF3385;
+}
+
+.btn-default:hover {
+  color: #FFF;
+  background-color: #FF3385;
+}
